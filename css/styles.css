@@ -80,6 +80,10 @@ a:hover {
     color: var(--text-muted-custom);
 }
 
+.subheading a {
+    text-transform: none;
+}
+
 .lead {
     font-size: 1.2rem;
 }
@@ -132,8 +136,9 @@ button:focus-visible {
     }
 
     #sideNav .navbar-brand .img-profile {
-        max-width: 10rem;
-        max-height: 10rem;
+        width: 10rem;
+        height: 10rem;
+        object-fit: cover;
         border: 0.5rem solid rgba(255, 255, 255, 0.2);
     }
 

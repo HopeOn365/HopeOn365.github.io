@@ -25,6 +25,7 @@ index.html          # 단일 페이지
 css/styles.css      # 사용자 정의 스타일
 js/scripts.js       # 스크롤 스파이, 모바일 메뉴
 assets/img/         # 프로필 사진, 파비콘
+projects/           # Colab 노트북 (신용 분석, 자영업자 재무 분석)
 ```
 
 ## 로컬에서 보기

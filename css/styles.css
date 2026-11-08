@@ -41,11 +41,11 @@ h1 .text-primary {
 }
 
 h2 {
-    font-size: 2.75rem;
+    font-size: clamp(1.9rem, 5vw, 2.75rem);
 }
 
 h3 {
-    font-size: 1.6rem;
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
 }
 
 a,
@@ -132,7 +132,8 @@ button:focus-visible {
 
     #sideNav .navbar-brand {
         display: flex;
-        margin: 0 auto 1rem;
+        margin: auto auto 0;
+        padding-top: 1rem;
     }
 
     #sideNav .navbar-brand .img-profile {
@@ -165,8 +166,20 @@ button:focus-visible {
     }
 }
 
+.img-profile-mobile {
+    width: 2.25rem;
+    height: 2.25rem;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+}
+
+#sideNav .navbar-brand {
+    font-weight: 700;
+}
+
 #sideNav .nav-link {
     color: rgba(255, 255, 255, 0.6) !important;
+    padding: 0.65rem 1rem;
 }
 
 #sideNav .nav-link:hover,
@@ -178,7 +191,7 @@ button:focus-visible {
 section.resume-section {
     display: flex;
     align-items: center;
-    padding: 5rem 1.5rem;
+    padding: 4rem 1.15rem;
     max-width: 75rem;
 }
 
@@ -191,6 +204,11 @@ section.resume-section .resume-section-content {
         min-height: 100vh;
         padding: 5rem 3rem;
     }
+
+    .site-footer {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
 }
 
 /* 소셜 아이콘 */
@@ -198,10 +216,10 @@ section.resume-section .resume-section-content {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 3.5rem;
-    height: 3.5rem;
-    margin-right: 1rem;
-    font-size: 1.5rem;
+    width: 3.25rem;
+    height: 3.25rem;
+    margin: 0 0.75rem 0.5rem 0;
+    font-size: 1.35rem;
     border-radius: 100%;
     background-color: #495057;
     color: #fff !important;
@@ -214,7 +232,7 @@ section.resume-section .resume-section-content {
 
 /* 개발 도구 아이콘 */
 .dev-icons {
-    font-size: 3rem;
+    font-size: clamp(2rem, 6vw, 3rem);
 }
 
 .dev-icons .list-inline-item i {
@@ -233,9 +251,17 @@ section.resume-section .resume-section-content {
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.08);
+@media (hover: hover) {
+    .project-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.08);
+    }
+}
+
+.project-card .card-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
 }
 
 .project-card a[aria-disabled="true"] {
@@ -251,4 +277,25 @@ section.resume-section .resume-section-content {
     color: var(--text-muted-custom);
     border-top: 1px solid #dee2e6;
     max-width: 75rem;
+    padding-left: 1.15rem;
+    padding-right: 1.15rem;
+}
+
+@media (max-width: 575.98px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .lead {
+        font-size: 1.05rem;
+    }
+
+    .subheading {
+        font-size: 1rem;
+    }
+
+    section.resume-section {
+        padding-top: 3.25rem;
+        padding-bottom: 3.25rem;
+    }
 }

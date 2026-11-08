@@ -23,7 +23,10 @@
     <!-- 사이드 내비게이션 -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" aria-label="주요 메뉴">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none">양재일</span>
+            <span class="d-flex d-lg-none align-items-center gap-2">
+                <img class="img-profile-mobile rounded-circle" src="assets/img/profile.jpg" alt="" />
+                양재일
+            </span>
             <span class="d-none d-lg-block">
                 <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="곤색 정장 차림의 양재일 프로필 사진" />
             </span>
@@ -203,13 +206,14 @@
                 <p class="mb-4">금융 실무 경험을 데이터 문제로 바꾸어 Google Colab과 Python으로 풀어 본 결과물입니다.</p>
 
                 <div class="row g-4">
-                    <div class="col-12 col-xl-4">
+                    <div class="col-12 col-md-6 col-xl-4">
                         <article class="card h-100 project-card">
                             <div class="card-body">
-                                <span class="badge bg-primary mb-2">11주차 초안</span>
+                                <span class="badge bg-primary mb-2">분석 완료</span>
                                 <h3 class="h5 card-title">금융·신용 데이터 분석</h3>
                                 <p class="card-text">공개 신용 데이터를 활용해 연체·부실과 관련된 신용 특성과 위험 요인을 분석하고, 여신 실무 관점에서 결과를 해석합니다.</p>
-                                <p class="small text-muted mb-0">Pandas · Seaborn · scikit-learn · 공개 데이터만 사용</p>
+                                <p class="small text-muted mb-2">역할: 문제 정의 · 전처리 · 모형 · 실무 해석</p>
+                                <p class="small text-muted mb-0">Pandas · Seaborn · scikit-learn</p>
                             </div>
                             <div class="card-footer bg-transparent border-0">
                                 <a class="btn btn-sm btn-outline-primary" href="https://colab.research.google.com/github/HopeOn365/HopeOn365.github.io/blob/main/projects/01_credit_risk_analysis.ipynb" target="_blank" rel="noopener">Colab 노트북</a>
@@ -217,13 +221,14 @@
                             </div>
                         </article>
                     </div>
-                    <div class="col-12 col-xl-4">
+                    <div class="col-12 col-md-6 col-xl-4">
                         <article class="card h-100 project-card">
                             <div class="card-body">
-                                <span class="badge bg-primary mb-2">11주차 초안</span>
+                                <span class="badge bg-primary mb-2">분석 완료</span>
                                 <h3 class="h5 card-title">자영업자 재무 분석</h3>
                                 <p class="card-text">가상 재무자료로 수익성·안정성 지표를 계산하고 시각화하여, 재무애로 컨설팅에서 쓰던 진단 과정을 데이터로 재현합니다.</p>
-                                <p class="small text-muted mb-0">Pandas · NumPy · Matplotlib · 가상 데이터</p>
+                                <p class="small text-muted mb-2">역할: 가상 자료 설계 · 비율 산출 · 진단 문장</p>
+                                <p class="small text-muted mb-0">Pandas · NumPy · Matplotlib</p>
                             </div>
                             <div class="card-footer bg-transparent border-0">
                                 <a class="btn btn-sm btn-outline-primary" href="https://colab.research.google.com/github/HopeOn365/HopeOn365.github.io/blob/main/projects/02_sme_financial_analysis.ipynb" target="_blank" rel="noopener">Colab 노트북</a>
@@ -231,17 +236,18 @@
                             </div>
                         </article>
                     </div>
-                    <div class="col-12 col-xl-4">
+                    <div class="col-12 col-md-6 col-xl-4">
                         <article class="card h-100 project-card">
                             <div class="card-body">
-                                <span class="badge bg-secondary mb-2">진행 예정</span>
+                                <span class="badge bg-primary mb-2">분석 완료</span>
                                 <h3 class="h5 card-title">부동산 데이터 분석</h3>
-                                <p class="card-text">국토교통부 실거래가 등 공공데이터로 지역별 거래량과 가격 추세를 분석하고 그래프·지도로 보여 줍니다.</p>
-                                <p class="small text-muted mb-0">Pandas · Matplotlib · 공공데이터 (출처·기준일 표기)</p>
+                                <p class="card-text">국토교통부 실거래가 집계(기준 2026-09)로 서울 자치구별 아파트 가격·거래량을 비교하고 지도형 그래프로 보여 줍니다.</p>
+                                <p class="small text-muted mb-2">역할: 공공데이터 수집 · 추세 분석 · 중개·담보 해석</p>
+                                <p class="small text-muted mb-0">Pandas · Matplotlib · 공공데이터</p>
                             </div>
                             <div class="card-footer bg-transparent border-0">
-                                <a class="btn btn-sm btn-outline-primary" href="#" aria-disabled="true">Colab 노트북</a>
-                                <a class="btn btn-sm btn-outline-dark" href="#" aria-disabled="true">GitHub 코드</a>
+                                <a class="btn btn-sm btn-outline-primary" href="https://colab.research.google.com/github/HopeOn365/HopeOn365.github.io/blob/main/projects/03_seoul_real_estate.ipynb" target="_blank" rel="noopener">Colab 노트북</a>
+                                <a class="btn btn-sm btn-outline-dark" href="https://github.com/HopeOn365/HopeOn365.github.io/blob/main/projects/03_seoul_real_estate.ipynb" target="_blank" rel="noopener">GitHub 코드</a>
                             </div>
                         </article>
                     </div>

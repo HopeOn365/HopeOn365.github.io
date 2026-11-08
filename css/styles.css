@@ -6,6 +6,10 @@
     --text-muted-custom: #6c757d;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 1.05rem;
@@ -118,6 +122,14 @@ button:focus-visible {
 
 #sideNav .navbar-toggler:focus {
     border-color: transparent;
+}
+
+@media (max-width: 991.98px) {
+    #sideNav .navbar-collapse {
+        background-color: var(--bs-primary);
+        margin-top: 0.25rem;
+        padding: 0.25rem 0 0.75rem;
+    }
 }
 
 @media (min-width: 992px) {
